@@ -509,7 +509,7 @@ $(document).ready(function(){
     var value = $(this).val().toLowerCase();
     console.log($(".fadeInUp .card .card-body p"))
     $(".fadeInUp .card .card-body p").filter(function() {
- 		$(this).parent().toggle($(this).text().toLowerCase().indexOf(value) > -1)
+     $(this).parent().toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
 });

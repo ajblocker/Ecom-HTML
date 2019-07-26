@@ -15,7 +15,7 @@ body, html{
 		display: none;
 	}
 	.navbar .navbar-nav .nav-link{
-		float: right;
+		/* float: right; */
 		display: block;
 	}
 	.card{
@@ -32,7 +32,7 @@ body, html{
         text-align: center;
 	}
 }
-@media (min-width:600px){
+@media (max-width:600px){
 	.navbar-brand{
 		display: none;
 	}
@@ -45,10 +45,10 @@ body, html{
 		display: block;
 		text-align: left;
 	  }
+	} 
     #footer{
         text-align: center;
 	}
-}
 /*   
   @media screen and (max-width: 600px) {
 	.topnav.responsive {position: relative;}
