@@ -8,33 +8,35 @@ body, html{
 .card{
     margin-bottom: 15px;
 }
-@media (max-width:768px){
-    #header{
-        text-align: center;
-    }
-    #social{
-        text-align: center;
-    }
-    #social hr #who hr{
-        margin: 8% auto;
-    }
-    #who{
-        text-align: center;
-    }
-    #who img{
-        margin-top: 50%;
-    }
+@media (max-width:1024px){
+    .navbar-brand{
+		display: none;
+	}
+	#work{
+		position: relative;
+		top: 0;
+		left: 50;
+		right: 50;
+	}
     #footer{
         text-align: center;
-    }
+	}
+}
+@media (min-width:600px){
+	.navbar-brand{
+		display: none;
+	}
+    #footer{
+        text-align: center;
+	}
 }
 .navbar{
     background-color: rgba(21,31,33,0.5);
     border-bottom: 1px solid #dedede;
-    font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Alegreya Sans', sans-serif;
 }
 .navbar .navbar-nav .nav-link{
-    color: #d1d1d1; 
+    color: black; 
 }
 .navbar .navbar-nav .nav-link:hover{
     color: #fff;
@@ -42,70 +44,8 @@ body, html{
 .navbar-toogler-icon{
     color: #fff;
 }
-/*Header*/
-
-#header{
-    background: url(../img/stars-bg.jpg) center center no-repeat;
-    background-size: cover;
-    height: 100%;
-    color: white;
-    display: flex;
-    align-items: center;
-}
-#header img{
-    padding: 0 0 20px 0;
-    width: 80%;
-}
-#header .header-right{
-    background-color: rgba(0,0,0,0.5);
-    padding: 30px;
-    border-radius: 10px;
-}
-#header .fa{
-    margin: 5% 0;
-}
-#header a .fa{
-    color: #fff;
-}
-#header a .fa:hover{
-    color: #ccc;
-}
-/*Social*/
-#social{
-    padding: 4.25rem 0;
-}
-#social .fa{
-    font-size: 1.5em;
-    color: #be2835;
-    border: 2px solid #be2835;
-    width: 60px;
-    height: 60px;
-    border-radius: 30%;
-    text-align: center;
-    padding: 30% 0;
-    margin-top: 10px;
-    transition: all 0.4s ease-in-out;
-}
-#social .fa:hover{
-    color: #fff;
-    background:#be2835;
-
-}
-
-/*who*/
-#who{
-    padding: 5rem 0;
-    background-color: #f6f6f6;
-}
-#who .btn-who{
-    background-color: #be2835;
-    color: #fff;
-    width: 50%;
-}
-#who .btn-who:hover{
-    background-color: transparent;
-    border: 1px solid #be2835;
-    color: #be2835;
+h1{
+	padding: 70px;
 }
 /*work*/
 #work{
@@ -142,26 +82,14 @@ body, html{
     color: #be2835;
     padding: 15px 0;
 }
-/*customers*/
-#customers{
-    padding: 5rem 0;
-}
-#customers .carousel-indicators li{
-    background-color: #be2835;
-}
-#customers .carousel-inner{
-    margin-bottom: 50px;
-}
-#customers .carousel-indicators{
-    margin-bottom: -50px;
-}
+
 /*pricing*/
 #pricing{
     padding: 5rem 0;
     background-color: #f6f6f6;
 }
 #pricing .card .card-header{
-    background-color: #6e6e6e;
+    background-color: black;
     color: #fff;
     transition: all 0.2s ease-in-out;
 }
@@ -183,7 +111,7 @@ body, html{
 /*footer*/
 #footer{
     padding: 2rem 0;
-    background-color: #484848;
+    background-color: black;
     color: white;
 }
 #footer a{
@@ -198,7 +126,7 @@ body, html{
 
 .mi-slider {
 	position: relative;
-	margin-top: 30px;
+	margin-top: 190px;
 	height: 490px;
 }
 
@@ -229,6 +157,10 @@ body, html{
 	display: inline-block;
 	padding: 20px;
 	width: 20%;
+	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-style: italic;
+	padding: 20px 10px 0;
+	font-size: 10px;
 	max-width: 300px;
 	-webkit-transform: translateX(600%);
 	transform: translateX(600%);
@@ -250,20 +182,12 @@ body, html{
 .mi-slider ul li a {
 	outline: none;
 	cursor: pointer;
+	color: black;
 }
 
 .mi-slider ul li img {
 	max-width: 100%;
 	border: none;
-}
-
-.mi-slider ul li h4 {
-	display: inline-block;
-	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-	font-style: italic;
-	font-weight: 400;
-	font-size: 18px;
-	padding: 20px 10px 0;
 }
 
 .mi-slider ul li:hover {
