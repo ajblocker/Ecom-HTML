@@ -29,6 +29,7 @@
                 <li class="nav-item"> <a class="nav-link" href="index1.html">HOME</a></li>  
                 <li class="nav-item"> <a class="nav-link" href="product.html">PRODUCT</a></li> 
                 <li class="nav-item"> <a class="nav-link" href="contact.html">CONTACT</a></li> 
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
               </ul>
   
           </div>
@@ -99,6 +100,16 @@
     <!-- Optional JavaScript -->
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("navigation-bar");
+          if (x.className === "collapse navbar-collapse") {
+            x.className += " responsive";
+          } else {
+            x.className = "navigation-bar";
+          }
+        }
+        </script>
     
   </body>
 </html>
