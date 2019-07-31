@@ -28,8 +28,8 @@ body, html{
 	#work{
 		position: relative;
 		top: 0;
-		left: 50;
-		right: 50;
+		left: 50px;
+		right: 50px;
 	}
     #footer{
         text-align: center;
@@ -145,7 +145,6 @@ h1{
 }
 
 /*styles for slider*/
-@import url('demo.css');
 
 .mi-slider {
 	position: relative;
